@@ -1,3 +1,5 @@
+@use '@/scss/mixins' as *;
+
 .button {
     border: 1px solid transparent;
     outline: none;
@@ -9,6 +11,8 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
+
+    @include text-preset-4;
 
     svg {
         width: 2rem;

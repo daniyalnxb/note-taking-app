@@ -15,8 +15,8 @@ const ResetPassword = () => {
         <div className="auth">
             <div className="auth-form-container">
                 {darkTheme ? <LogoDark className="logo" /> : <Logo className="logo" />}
-                <h1 className="heading text-preset-1">Rest Your password</h1>
-                <h2 className="sub-heading text-preset-5">Choose a new password to secure you account.</h2>
+                <h1 className="heading">Rest Your password</h1>
+                <h2 className="sub-heading">Choose a new password to secure you account.</h2>
 
                 <div className="form-container">
                     <InputField name="password" type="password" label="New Password" hint="At least 8 characters" />

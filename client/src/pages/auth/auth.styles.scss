@@ -1,3 +1,5 @@
+@use '@/scss/mixins' as *;
+
 .auth {
     background-color: var(--color-auth-bg);
     width: 100dvw;
@@ -28,12 +30,14 @@
             color: var(--color-heading);
             margin-bottom: 8px;
             text-align: center;
+            @include text-preset-1;
         }
 
         .sub-heading {
             color: var(--color-sub-heading);
             margin-bottom: 20px;
             text-align: center;
+            @include text-preset-5;
         }
 
         .seperator {
@@ -59,6 +63,7 @@
 
             p {
                 color: var(--color-sub-heading);
+                @include text-preset-5;
 
                 span {
                     color: var(--color-heading);

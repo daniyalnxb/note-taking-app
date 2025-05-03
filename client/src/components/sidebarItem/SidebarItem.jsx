@@ -19,9 +19,9 @@ const SidebarItem = ({ title='Your title', icon='tag' }) => {
         }
     };
   return (
-    <div className="sidebar-item active">
+    <div className={`sidebar-item ${icon === 'home' ? 'active' : ''}`}>
         {renderIcon()}
-        <p className="sidebar-item-name text-preset-4">{title}</p>
+        <p className="sidebar-item-name">{title}</p>
         <ChevronIcon className="chavron-icon" />
     </div>
   );

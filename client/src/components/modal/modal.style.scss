@@ -1,3 +1,5 @@
+@use '@/scss/mixins' as *;
+
 .modal-overlay {
     display: none;
     width: 100dvw;
@@ -48,10 +50,12 @@
 
                 .title {
                     color: var(--color-heading);
+                    @include text-preset-3;
                 }
 
                 .description {
                     color: var(--color-description);
+                    @include text-preset-5;
                 }
             }
         }

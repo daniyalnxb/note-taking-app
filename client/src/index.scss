@@ -44,11 +44,6 @@ body {
             path {
                 stroke: var(--color-blue-primary);
             }
-
-            &.home {
-                fill: var(--color-blue-primary);
-                stroke: 0px;
-            }
         }
 
         .chavron-icon {

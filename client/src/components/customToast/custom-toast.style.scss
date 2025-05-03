@@ -1,3 +1,5 @@
+@use '@/scss/mixins' as *;
+
 .custom-toast {
     width: 100%;
     padding: var(--spacing-100);
@@ -28,12 +30,14 @@
 
         .message {
             color: var(--color-toast-text);
+            @include text-preset-5;
         }
     }
 
     .link {
         margin-right: var(--spacing-100);
         color: var(--color-toast-text);
+        @include text-preset-5;
 
         a {
             text-decoration: underline;

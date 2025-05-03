@@ -16,8 +16,8 @@ const SignUp = () => {
     <div className="auth">
         <div className="auth-form-container">
             {darkTheme ? <LogoDark className="logo" /> : <Logo className="logo" />}
-            <h1 className="heading text-preset-1">Create Your Account</h1>
-            <h2 className="sub-heading text-preset-5">Sign up to start organizing your notes and boost your productivity.</h2>
+            <h1 className="heading">Create Your Account</h1>
+            <h2 className="sub-heading">Sign up to start organizing your notes and boost your productivity.</h2>
 
             <div className="form-container">
                 <InputField name="email" placeholder="email@example.com" label="Email Address" />
@@ -26,10 +26,10 @@ const SignUp = () => {
                 <div className="seperator"></div>
             </div>
             <div className="login-with-google">
-                <p className="text-preset-5">or log in with:</p>
+                <p>or log in with:</p>
                 <Button type="secondary" icon="google" style={{width: '100%'}}>Google</Button>
                 <div className="seperator"></div>
-                <p className="text-preset-5">Already have and account? <span><Link to="/login">Login</Link></span></p>
+                <p>Already have and account? <span><Link to="/login">Login</Link></span></p>
             </div>
         </div>
     </div>

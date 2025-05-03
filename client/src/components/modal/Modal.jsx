@@ -14,8 +14,8 @@ const Modal = ({ open, handleClose }) => {
                         <DeleteIcon />
                     </div>
                     <div className="heading-conatiner">
-                        <p className="title text-preset-3">Delete Note</p>
-                        <p className="description text-preset-5">Are you sure you want to permanently delete this note? This action cannot be undone.</p>
+                        <p className="title">Delete Note</p>
+                        <p className="description">Are you sure you want to permanently delete this note? This action cannot be undone.</p>
                     </div>
                 </div>
                 <div className="modal-footer">

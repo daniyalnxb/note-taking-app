@@ -1,3 +1,5 @@
+@use '@/scss/mixins' as *;
+
 .sidebar-item {
     padding: var(--spacing-120) var(--spacing-150);
     display: flex;
@@ -22,6 +24,7 @@
     .sidebar-item-icon {
         width: 2rem;
         height: 2rem;
+        stroke-width: 0.5px;
 
         path {
             stroke: var(--color-description);
@@ -31,6 +34,7 @@
     .sidebar-item-name {
         color: var(--color-description);
         margin-top: 2px;
+        @include text-preset-4;
     }
 
     .chavron-icon {

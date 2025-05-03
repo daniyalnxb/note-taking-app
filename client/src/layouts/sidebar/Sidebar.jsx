@@ -7,6 +7,7 @@ import SidebarItem from '../../components/sidebarItem/SidebarItem';
 
 import Logo from '@/assets/logo.svg';
 import LogoDark from '@/assets/logo-dark.svg';
+import Button from '../../components/button/Button';
 
 const Sidebar = () => {
     const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
@@ -22,9 +23,10 @@ const Sidebar = () => {
             <SidebarItem title="Archived Notes" icon="archive" />
           </div>
           <div className="tags-navigation-conatainer">
-            <p className="tags-title text-preset-4">Tags</p>
+            <p className="tags-title">Tags</p>
             <div className="tags-navigation">
               <SidebarItem title="Cooking" icon="tag" />
+              <Button>Hello</Button>
             </div>
           </div>
         </nav>

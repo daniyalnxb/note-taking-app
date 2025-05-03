@@ -22,7 +22,7 @@ const  Button = ({ children, type='primary', disable, onClick=() => {}, icon="",
   return (
     <button
       onClick={onButtonClick}
-      className={`button text-preset-4 ${type} ${disable ? 'disabled' : ''}`}
+      className={`button ${type} ${disable ? 'disabled' : ''}`}
       {...rest}
     >
       {icon &&

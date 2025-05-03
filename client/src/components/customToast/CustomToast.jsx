@@ -10,10 +10,10 @@ const CustomToast = ( { closeToast, link="", message }) => {
         <div className="custom-toast">
           <div className="message-container">
             <CheckCircleIcon className="check-icon" />
-            <p className="message text-preset-5">{message}</p>
+            <p className="message">{message}</p>
           </div>
           {link &&
-            <div className="link text-preset-5">
+            <div className="link">
               <a>{link}</a>
             </div>
           }

@@ -13,9 +13,9 @@ const InputField = ({ name="abc", placeholder="", hint="", type="text", label="C
 
   return (
     <div className="input-field">
-        <label className="label text-preset-4" htmlFor={name}>{label}</label>
+        <label className="label" htmlFor={name}>{label}</label>
         <div className="input-container">
-          <input type={inputType} className="input text-preset-5" id={name} name={name} placeholder={placeholder} />
+          <input type={inputType} className="input" id={name} name={name} placeholder={placeholder} />
           {type === 'password' &&
             <>
               {inputType === 'password' ? 
@@ -28,7 +28,7 @@ const InputField = ({ name="abc", placeholder="", hint="", type="text", label="C
         {hint &&
           <div className="hint-container">
             <InfoIcon />
-            <p className="message text-preset-5">{hint}</p>
+            <p className="message">{hint}</p>
           </div>
         }
     </div>
