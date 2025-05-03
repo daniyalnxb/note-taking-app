@@ -1,0 +1,135 @@
+@use 'sass:color';
+@use 'colors' as *;
+@use 'fonts' as *;
+
+html[data-theme='light'] {
+    --background-color: #{$neutral-0};
+    --background-color-light: #{$neutral-100};
+    --color-heading: #{$neutral-950};
+    --color-sub-heading: #{$neutral-600};
+    --color-description: #{$neutral-700};
+    --color-placeholder: #{$neutral-500};
+    --color-icon: #{$neutral-500};
+    --color-label: #{$neutral-950};
+    --color-support: #{$neutral-600};
+
+    --color-auth-bg: #{$neutral-100};
+
+    --color-white: #{$neutral-0};
+    --color-black: #{$neutral-950};
+    --color-blue-primary: #{$blue-500};
+    --color-blue-secondary: #{$blue-700};
+    --color-blue-tertiary: #{$blue-50};
+    --color-green-primary: #{$green-500};
+    --color-green-secondary: #{$green-100};
+    --color-red-primary: #{$red-500};
+    --color-red-secondary: #{$red-100};
+
+    --color-modal-bg: #{$neutral-0};
+    --color-border: #{$neutral-300};
+
+    --color-hover-bg: #{$neutral-100};
+}
+
+html[data-theme='dark'] {
+    --background-color: #{$neutral-950};
+    --background-color-light: #{$neutral-700};
+    --color-heading: #{$neutral-0};
+    --color-sub-heading: #{$neutral-300};
+    --color-description: #{$neutral-200};
+    --color-placeholder: #{$neutral-500};
+    --color-icon: #{$neutral-500};
+    --color-label: #{$neutral-0};
+    --color-support: #{$neutral-400};
+
+    --color-auth-bg: #{$neutral-700};
+
+    --color-white: #{$neutral-0};
+    --color-black: #{$neutral-950};
+    --color-blue-primary: #{$blue-500};
+    --color-blue-secondary: #{$blue-700};
+    --color-blue-tertiary: #{$blue-50};
+    --color-green-primary: #{$green-500};
+    --color-green-secondary: #{$green-100};
+    --color-red-primary: #{$red-500};
+    --color-red-secondary: #{$red-100};
+
+    --color-modal-bg: #{$neutral-950};
+    --color-border: #{$neutral-700};
+
+    --color-hover-bg: #{$neutral-800};
+}
+
+html[data-theme='light'], 
+html[data-theme='dark'] {
+    --font-family-base: 'Inter', sans-sarif;
+
+    // button colors 
+    --color-bg-button-primary: #{$blue-500};
+    --color-bg-button-hover-primary: #{$blue-700};
+    --color-bg-button-focus-primary: #{$blue-500};
+    --color-button-primary: #{$neutral-0};
+    --color-button-focus-stroke-primary: #{$neutral-300};
+
+    --color-bg-button-secondary: #{$neutral-100};
+    --color-bg-button-hover-secondary: #{$neutral-0};
+    --color-bg-button-focus-secondary: #{$neutral-0};
+    --color-button-secondary: #{$neutral-600};
+    --color-button-hover-secondary: #{$neutral-950};
+    --color-button-hover-stroke-secondary: #{$neutral-300};
+    --color-button-focus-stroke-secondary: #{$neutral-300};
+
+    --color-bg-button-danger: #{$red-500};
+    --color-bg-button-hover-danger: #{color.scale($red-500, $lightness: 15%)};
+    --color-bg-button-focus-danger: #{$red-500};
+    --color-button-danger: #{$neutral-0};
+    --color-button-focus-stroke-danger: #{$neutral-300};
+
+    --color-bg-button-disable: #{$neutral-100};
+    --color-button-disable: #{$neutral-300};
+
+    --color-input-border: #{$neutral-300};
+    --color-input-border-focus: #{$neutral-950};
+    --color-input-placeholder: #{$neutral-500};
+    --color-input: #{$neutral-950};
+    --color-input-hover-bg: #{$neutral-50};
+    --color-input-disable-bg: #{$neutral-50};
+    --color-input-stroke: #{$neutral-500};
+    --color-input-hint: #{$neutral-600};
+    --color-input-icon: #{$neutral-500};
+
+    --color-toast-border: #{$neutral-200};
+    --color-toast-text: #{$neutral-950};
+    --color-toast-cross: #{$neutral-500};
+
+    --color-modal-border: #{$neutral-300};
+    --color-modal-overlay: rgba(0, 0, 0, 0.5);
+    --color-modal-icon-bg: #{$neutral-100};
+
+    --radius-0: 0px;
+    --radius-4: 0.4rem;
+    --radius-6: 0.6rem;
+    --radius-8: 0.8rem;
+    --radius-10: 1rem;
+    --radius-12: 1.2rem;
+    --radius-16: 1.6rem;
+    --radius-20: 2rem;
+    --radius-24: 2.4rem;
+    --radius-full: 999px;
+
+    --spacing-0: 0px;
+    --spacing-025: 2px;
+    --spacing-050 : 0.4rem;
+    --spacing-075 : 0.6rem;
+    --spacing-100 : 0.8rem;
+    --spacing-120: 1rem;
+    --spacing-150 : 1.2rem;
+    --spacing-200 : 1.6rem;
+    --spacing-250 : 2rem;
+    --spacing-300 : 2.4rem;
+    --spacing-400 : 3.2rem;
+    --spacing-500 : 4rem;
+    --spacing-600 : 4.8rem;
+    --spacing-800 : 6.4rem;
+    --spacing-1000 : 8rem;
+}

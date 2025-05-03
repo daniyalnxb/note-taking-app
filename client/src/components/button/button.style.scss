@@ -1,0 +1,92 @@
+.button {
+    border: 1px solid transparent;
+    outline: none;
+    padding: 1.2rem 1.6rem;
+    cursor: pointer;
+    width: max-content;
+    border-radius: var(--radius-8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    svg {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &.disabled {
+        background-color: var(--color-bg-button-disable) !important;
+        color: var(--color-button-disable) !important;
+        outline: none !important;
+        cursor: not-allowed;
+
+        svg {
+
+        }
+    }
+
+    &:focus {
+        outline-offset: 2px;
+    }
+
+    &.primary {
+        background-color: var(--color-bg-button-primary);
+        color: var(--color-button-primary);
+
+        &:hover {
+            background-color: var(--color-bg-button-hover-primary);
+        }
+
+        &:focus {
+            background-color: var(--color-bg-button-focus-primary);
+            outline: 2px solid var(--color-button-focus-stroke-primary);
+        }
+    }
+
+    &.danger {
+        background-color: var(--color-bg-button-danger);
+        color: var(--color-button-danger);
+
+        &:hover {
+            background-color: var(--color-bg-button-hover-danger);
+        }
+
+        &:focus {
+            background-color: var(--color-bg-button-focus-danger);
+            outline: 2px solid var(--color-button-focus-stroke-danger);
+        }
+    }
+
+    &.secondary {
+        background-color: var(--color-bg-button-secondary);
+        color: var(--color-button-secondary);
+
+        &:hover {
+            background-color: var(--color-bg-button-hover-secondary);
+            color: var(--color-button-hover-secondary);
+            border: 1px solid var(--color-button-hover-stroke-secondary);
+        }
+
+        &:focus {
+            background-color: var(--color-bg-button-focus-secondary);
+            outline: 1px solid var(--color-button-focus-stroke-secondary);
+        }
+    }
+
+    &.bordered {
+        background-color: var(--color-bg-button-hover-secondary);
+        color: var(--color-button-hover-secondary);
+        border: 1px solid var(--color-button-hover-stroke-secondary);
+
+        &:hover {
+            background-color: var(--color-bg-button-secondary);
+            color: var(--color-button-secondary);
+        }
+
+        &:focus {
+            background-color: var(--color-bg-button-focus-secondary);
+            outline: 1px solid var(--color-button-focus-stroke-secondary);
+        }
+    }
+}

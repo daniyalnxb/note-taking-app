@@ -1,0 +1,42 @@
+.dashboard-layout {
+    height: 100dvh;
+    width: 100dvw;
+    display: grid;
+    // grid-template-columns: 27.2rem 29rem 55.8rem 25.8rem; //sidebar | sub menu | main content | options bar
+    // grid-template-rows: 8.1rem 1fr; //header | body
+    // 27.2 / 137.8 ≈ 0.197
+    // 29 / 137.8 ≈ 0.210
+    // 55.8 / 137.8 ≈ 0.405
+    // 25.8 / 137.8 ≈ 0.187
+    grid-template-columns: 2fr 2.1fr 4.1fr 1.9fr; //sidebar | sub menu | main content | options bar
+    grid-template-rows: 8.1rem 1fr; //header | body
+
+    .header {
+        grid-column: 2 / -1;
+        grid-row: 1 /2;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .sidebar {
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
+        border-right: 1px solid var(--color-border);
+    }
+
+    .sub-menu {
+        grid-column: 2 / 3;
+        grid-row: 2 / -1;
+        border-right: 1px solid var(--color-border);
+    }
+
+    .main-content {
+        grid-column: 3 / 4;
+        grid-row: 2 / -1;
+        border-right: 1px solid var(--color-border);
+    }
+
+    .options-bar {
+        grid-column: 4 / 5;
+        grid-row: 2 / -1;
+    }
+}

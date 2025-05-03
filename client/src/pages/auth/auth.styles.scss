@@ -1,0 +1,69 @@
+.auth {
+    background-color: var(--color-auth-bg);
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 20px;
+
+    .auth-form-container {
+        width: 100%;
+        max-width: 54rem;
+        border-radius: var(--radius-12);
+        background-color: var(--background-color);
+        padding: var(--spacing-600);
+        border: 1px solid var(--color-border);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .logo {
+            margin-bottom: 10px;
+        }
+
+        .heading {
+            color: var(--color-heading);
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .sub-heading {
+            color: var(--color-sub-heading);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .seperator {
+            width: 100%;
+            height: 1px;
+            background-color: var(--color-border);
+        }
+
+        .form-container {
+           display: flex;
+           flex-direction: column;
+           gap: 16px;
+           width: 100%;
+        }
+
+        .login-with-google {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 26px;
+            width: 100%;
+            text-align: center;
+
+            p {
+                color: var(--color-sub-heading);
+
+                span {
+                    color: var(--color-heading);
+                }
+            }
+        }
+    }
+}

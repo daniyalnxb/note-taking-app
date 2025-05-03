@@ -1,0 +1,44 @@
+.sidebar-item {
+    padding: var(--spacing-120) var(--spacing-150);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: var(--radius-8);
+
+    &:hover {
+        background-color: var(--color-hover-bg);
+
+        .sidebar-item-icon {
+            path {
+                stroke: var(--color-blue-primary);
+            }
+        }
+
+        .chavron-icon {
+            opacity: 1;
+        }
+    }
+
+    .sidebar-item-icon {
+        width: 2rem;
+        height: 2rem;
+
+        path {
+            stroke: var(--color-description);
+        }
+    }
+
+    .sidebar-item-name {
+        color: var(--color-description);
+        margin-top: 2px;
+    }
+
+    .chavron-icon {
+        margin-left: auto;
+        opacity: 0;
+
+        path {
+            stroke: var(--color-description);
+        }
+    }
+}
