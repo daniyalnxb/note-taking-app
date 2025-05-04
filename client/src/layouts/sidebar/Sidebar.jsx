@@ -19,14 +19,13 @@ const Sidebar = () => {
         </div>
         <nav className="navigation">
           <div className="primary-navigation">
-            <SidebarItem title="All notes" icon="home" />
-            <SidebarItem title="Archived Notes" icon="archive" />
+            <SidebarItem title="All notes" icon="home" to='/' />
+            <SidebarItem title="Archived Notes" icon="archive" to='archived' />
           </div>
           <div className="tags-navigation-conatainer">
             <p className="tags-title">Tags</p>
             <div className="tags-navigation">
-              <SidebarItem title="Cooking" icon="tag" />
-              <Button>Hello</Button>
+              <SidebarItem title="Cooking" icon="tag" to='/react/1' />
             </div>
           </div>
         </nav>

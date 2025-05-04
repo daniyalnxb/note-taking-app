@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import './sidebar-item.style.scss';
 
@@ -7,7 +8,7 @@ import ArchiveIcon from '@/assets/icons/archive.svg';
 import TagIcon from '@/assets/icons/tag.svg';
 import ChevronIcon from '@/assets/icons/chevron-right-md.svg';
 
-const SidebarItem = ({ title='Your title', icon='tag' }) => {
+const SidebarItem = ({ title='Your title', icon='tag', to='/' }) => {
     const renderIcon = () => {
         switch(icon) {
             case 'home':
@@ -19,11 +20,13 @@ const SidebarItem = ({ title='Your title', icon='tag' }) => {
         }
     };
   return (
-    <div className={`sidebar-item ${icon === 'home' ? 'active' : ''}`}>
-        {renderIcon()}
-        <p className="sidebar-item-name">{title}</p>
-        <ChevronIcon className="chavron-icon" />
-    </div>
+    <NavLink to={to}>
+        <div className={`sidebar-item`}>
+            {renderIcon()}
+            <p className="sidebar-item-name">{title}</p>
+            <ChevronIcon className="chavron-icon" />
+        </div>
+    </NavLink>
   );
 };
 

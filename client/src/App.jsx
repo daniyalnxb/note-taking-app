@@ -31,12 +31,15 @@ function App() {
       />
       <ErrorBoundry>
         <Routes>
-          <Route path='/' element={<DashboardLayout />} />
+          <Route path='/' element={<DashboardLayout />}>
+            <Route index element={<h1>All notes</h1>} />
+            <Route path='archived' element={<h1>Archived notes</h1>} />
+            <Route path='/:tagName/:tagId' element={<h1>Tag</h1>} />
+          </Route>
           <Route path='/login' element={<Login />} />
           <Route path='/sign-up' element={<SignUp />} />
           <Route path='/forgot-password' element={<ForgotPassword />} />
           <Route path='/reset-password' element={<ResetPassword />} />
-          <Route path='/' />
         </Routes>
       </ErrorBoundry>
     </>

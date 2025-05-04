@@ -8,7 +8,8 @@
     // 29 / 137.8 ≈ 0.210
     // 55.8 / 137.8 ≈ 0.405
     // 25.8 / 137.8 ≈ 0.187
-    grid-template-columns: 2fr 2.1fr 4.1fr 1.9fr; //sidebar | sub menu | main content | options bar
+    // grid-template-columns: 2fr 2.1fr 4.1fr 1.9fr; //sidebar | sub menu | main content | options bar
+    grid-template-columns: 2fr 8.1fr; //sidebar | sub menu | main content | options bar
     grid-template-rows: 8.1rem 1fr; //header | body
 
     .header {

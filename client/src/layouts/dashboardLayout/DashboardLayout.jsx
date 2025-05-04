@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 
 import './dashboard-layout.style.scss';
 import Sidebar from '@/layouts/sidebar/Sidebar';
@@ -12,9 +13,7 @@ const DashboardLayout = () => {
     <div className="dashboard-layout">
         <Header />
         <Sidebar />
-        <SubMenu />
-        <MainContent />
-        <OptionsBar />
+        <Outlet />
     </div>
   );
 };

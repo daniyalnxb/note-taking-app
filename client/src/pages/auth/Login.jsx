@@ -7,10 +7,12 @@ import Logo from '@/assets/logo.svg';
 import LogoDark from '@/assets/logo-dark.svg';
 import InputField from '@/components/inputField/InputField';
 import Button from '@/components/button/Button';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Login = () => {
     const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
+    const location = useLocation()
+    console.log("location: ", location.pathname.split('/'));
 
     return (
         <div className="auth">
