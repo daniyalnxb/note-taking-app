@@ -1,3 +1,27 @@
+@use '@/scss/_mixins' as *;
+
 .header {
-    
+    padding: 2.6rem 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__title {
+        @include text-preset-1;
+        color: var(--color-heading);
+    }
+
+    &__search-bar {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+
+        .settings-icon {
+            cursor: pointer;
+            path {
+                stroke: var(--color-heading);
+                fill: var(--color-heading);
+            }
+        }
+    }
 }

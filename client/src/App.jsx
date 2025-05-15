@@ -31,12 +31,16 @@ function App() {
       />
       <ErrorBoundry>
         <Routes>
-          <Route path='/' element={<DashboardLayout />} />
+          <Route path='/'>
+            <Route index element={<DashboardLayout />}/>
+            <Route path='/archived' element={<DashboardLayout />}/>
+            <Route path='/tag/:tagName' element={<DashboardLayout />}/>
+          </Route>
           <Route path='/login' element={<Login />} />
           <Route path='/sign-up' element={<SignUp />} />
           <Route path='/forgot-password' element={<ForgotPassword />} />
           <Route path='/reset-password' element={<ResetPassword />} />
-          <Route path='/' />
+          <Route path='*' element={<h1>404 Not Found</h1>} />
         </Routes>
       </ErrorBoundry>
     </>

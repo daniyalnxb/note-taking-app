@@ -4,6 +4,7 @@ import './button.style.scss';
 
 import RefreshIcon from '@/assets/icons/refresh-left.svg';
 import GoogleLogo from '@/assets/icons/google.svg';
+import PlusIcon from '@/assets/icons/plus.svg';
 
 const  Button = ({ children, type='primary', disable, onClick=() => {}, icon="", ...rest }) => {
   
@@ -15,7 +16,11 @@ const  Button = ({ children, type='primary', disable, onClick=() => {}, icon="",
   const getLogo = () => {
     switch(icon) {
       case 'google':
-        return <GoogleLogo />
+        return <GoogleLogo />;
+      case 'plus':
+        return <PlusIcon />;
+      case 'refresh':
+        return <RefreshIcon />;
     }
   }
 

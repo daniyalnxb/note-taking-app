@@ -17,6 +17,10 @@
     svg {
         width: 2rem;
         height: 2rem;
+
+        path {
+            fill: var(--color-button-primary);
+        }
     }
 
     &.disabled {
@@ -26,7 +30,9 @@
         cursor: not-allowed;
 
         svg {
-
+            path {
+                fill: var(--color-button-disable) !important;
+            }
         }
     }
 
@@ -66,6 +72,12 @@
         background-color: var(--color-bg-button-secondary);
         color: var(--color-button-secondary);
 
+        svg {
+            path {
+                fill: var(--color-button-secondary);
+            }
+        }
+
         &:hover {
             background-color: var(--color-bg-button-hover-secondary);
             color: var(--color-button-hover-secondary);
@@ -82,6 +94,12 @@
         background-color: var(--color-bg-button-hover-secondary);
         color: var(--color-button-hover-secondary);
         border: 1px solid var(--color-button-hover-stroke-secondary);
+
+        svg {
+            path {
+                fill: var(--color-button-hover-secondary);
+            }
+        }
 
         &:hover {
             background-color: var(--color-bg-button-secondary);

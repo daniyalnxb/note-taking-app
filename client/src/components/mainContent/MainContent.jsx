@@ -4,7 +4,9 @@ import './main-content.style.scss';
 
 const MainContent = () => {
   return (
-    <div className="main-content">MainContent</div>
+    <div className="main-content">
+      Main Content
+    </div>
   );
 };
 

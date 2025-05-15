@@ -1,0 +1,64 @@
+@use '@/scss/mixins' as *;
+
+.search-bar {
+    width: 100%;
+    min-width: 30rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--color-input-border);
+    border-radius: var(--radius-8);
+    padding: 12px 16px;
+
+    svg {
+        path {
+            stroke: var(--color-heading);
+            fill: var(--color-heading);
+        }
+    }
+
+    &:hover {
+        background-color: var(--color-search-bar-hover-bg);
+        .input-container {
+            input {
+                background-color: var(--color-search-bar-hover-bg);
+            }
+        }
+    }
+
+    .input-container {
+        position: relative;
+        width: 100%;
+        .input {
+            outline: none;
+            border: none;
+            width: 100%;
+            color: var(--color-search-input);
+            @include text-preset-5;
+            background-color: transparent;
+    
+            &::placeholder {
+                color: var(--color-input-placeholder);
+            }
+    
+            &:focus {
+                outline: none;
+            }
+        }
+    
+        .show-hide-icon {
+            width: 2rem;
+            height: 2rem;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translate(0, -50%);
+            cursor: pointer;
+
+            path {
+                stroke: var(--color-input-icon);
+                fill: var(--color-input-icon);
+            }
+        }
+    }
+}

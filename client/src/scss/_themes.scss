@@ -29,6 +29,13 @@ html[data-theme='light'] {
     --color-border: #{$neutral-300};
 
     --color-hover-bg: #{$neutral-100};
+
+    --color-search-bar-hover-bg: #{$neutral-50};
+    --color-search-input: #{$neutral-950};
+
+    --color-sub-menu-item-bg: #{$neutral-100};
+    --color-sub-menu-border: #{$neutral-200};
+    --color-sub-memu-tag-bg: #{$neutral-200};
 }
 
 html[data-theme='dark'] {
@@ -58,6 +65,13 @@ html[data-theme='dark'] {
     --color-border: #{$neutral-700};
 
     --color-hover-bg: #{$neutral-800};
+
+    --color-search-bar-hover-bg: #{$neutral-700};
+    --color-search-input: #{$neutral-0};
+
+    --color-sub-menu-item-bg: #{$neutral-800};
+    --color-sub-menu-border: #{$neutral-800};
+    --color-sub-memu-tag-bg: #{$neutral-600};
 }
 
 html[data-theme='light'], 
