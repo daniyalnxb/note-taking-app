@@ -7,6 +7,9 @@ const SubMenu = () => {
   return (
     <div className="sub-menu">
       <Button icon="plus" style={{width: '100%'}}>Create New Note</Button>
+      <p className="hepler-text">
+        All your archived notes are stored here. You can restore or delete them anytime.
+      </p>
       <div className="sub-menu__items-list">
         <div className="sub-menu-item active">
           <p className="item-title">React Performance Optimization</p>

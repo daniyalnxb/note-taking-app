@@ -13,7 +13,7 @@ const Sidebar = () => {
 
     return (
       <aside className="sidebar">
-        <div className="logo-container">
+        {/* <div className="logo-container">
           {darkTheme ? <LogoDark className="logo" onClick={toggleDarkTheme} /> : <Logo className="logo" onClick={toggleDarkTheme} />}
         </div>
         <nav className="navigation">
@@ -27,7 +27,8 @@ const Sidebar = () => {
               <SidebarItem title="Cooking" icon="tag" to='/tag/cooking' />
             </div>
           </div>
-        </nav>
+        </nav> */}
+        <h1>SIde bar</h1>
       </aside>
     );
 };

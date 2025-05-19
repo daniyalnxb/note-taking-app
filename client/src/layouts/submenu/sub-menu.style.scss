@@ -5,13 +5,20 @@
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
-    height: calc(100% - 8.1rem);
+    height: 100%;
+
+    .hepler-text {
+        @include text-preset-5;
+        color: var(--color-description);
+    }
 
     &__items-list {
         display: flex;
         flex-direction: column;
         overflow-y: auto;
         scrollbar-width: thin;
+        // height: calc(100vh - 16rem);
+        height: calc(100vh - 23.5rem);
 
         .sub-menu-item {
             border-radius: var(--radius-0);
@@ -53,7 +60,17 @@
             .item-time {
                 @include text-preset-6;
                 font-weight: 400;
+                color: var(--color-description);
             }
         }
+
+        @media screen and (max-width: 940px) {
+            height: auto;
+        }
+    }
+
+    @media screen and (max-width: 940px) {
+        height: calc(100vh - 14.8rem);
+        // overflow-y: auto;
     }
 }

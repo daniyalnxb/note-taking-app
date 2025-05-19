@@ -1,7 +1,7 @@
 @use '@/scss/_mixins' as *;
 
 .header {
-    padding: 2.6rem 3.2rem;
+    padding: var(--spacing-200) var(--spacing-400) var(--spacing-200)var(--spacing-400);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,9 +19,20 @@
         .settings-icon {
             cursor: pointer;
             path {
-                stroke: var(--color-heading);
                 fill: var(--color-heading);
             }
+        }
+    }
+
+    @media screen and (max-width: 940px) {
+        background-color: var(--color-auth-bg);
+
+        &__title {
+            display: none;
+        }
+
+        &__search-bar {
+            display: none;
         }
     }
 }
