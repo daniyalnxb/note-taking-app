@@ -9,7 +9,7 @@ const server = http.createServer(app);
 
 async function startServer() {
     try {
-        // await connectMongo();
+        await connectMongo();
         server.listen(PORT, () => console.log(`Server running on port ${PORT}...`));
     } catch(err) {
         console.error(`Error while starting server: ${err}`);
